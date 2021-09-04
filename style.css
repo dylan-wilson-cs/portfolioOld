@@ -1,0 +1,89 @@
+#sidebar-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 15%;
+    border: black solid thick;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    top: 0;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #sidebar-nav {
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        justify-content: space-around;
+        top: 0;
+        z-index: 1;
+    }
+}
+#sidebar-nav a{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 4vh;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #sidebar-nav a{
+    margin-top: 0;
+    }
+}
+#sidebar-nav #my-picture{
+    width: 200px;
+    margin-top: 7vh;
+    padding: 5%;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #sidebar-nav #my-picture{
+        display: none;
+    }
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    width: 85%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #main-container{
+        margin-top: 17%;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+#main-container section{
+    height: 100vh;
+}
+#main-section{
+    margin-top: 100px;
+}
+
+#projects-container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+.social-icon{
+    font-size: 5em;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    outline : none;
+}
+
+.demo-code-icon{
+    text-align: center;
+    font-size: 32px;
+}
+
+.skills-icons{
+    font-size: 124px;
+}
