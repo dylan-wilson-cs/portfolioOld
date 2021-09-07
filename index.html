@@ -8,9 +8,6 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 
-		<!-- Basic stylesheet  -->
-		<link rel="stylesheet" href="style.css">
-
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -24,6 +21,8 @@
 		<!-- Devicon Icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
 
+		<!-- Basic stylesheet  -->
+		<link rel="stylesheet" href="style.css">
 
 		<title>Hello, world!</title>
 	</head>
@@ -36,12 +35,12 @@
 			<a href="#">Contact</a>
 		</nav>
 
-		<main id="main-container" class="container-fluid">
-			<section id="main-section" class="container p-5 border-bottom">
+		<main id="main-outer-container">
+			<section id="primary-section" class="container-lg p-5 border-bottom">
 				<h1 class="card-text">DYLAN WILSON</h1>
 				<h3>CONTACT INFO Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore impedit vel, repreh</h3>
 				<h5>QUICK SYNOPSIS Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore commodi cupiditate nisi modi, eligendi sint quod quibusdam adipisci laboriosam reprehenderit placeat rerum libero veritatis. Esse nesciunt non vero officiis?</h5>
-				<div>
+				<div id="social-media-icons" class="container">
 					<a href="">
 						<i class="social-icon bi bi-github"></i>
 					</a>
@@ -54,7 +53,7 @@
 					<a href="">
 						<i class="social-icon bi bi-github"></i>
 					</a>
-
+				</div>
 			</section>
 
 			<section id="projects-container" class="container p-5 border-bottom">
@@ -69,92 +68,104 @@
 						</p>
 					</div>
 					<div class="row my-5 align-items-center justify-content-center">
-						<div class="col-3">
+						<div class="col-md-3">
 							<div class="card">
 								<div class="card-body text-center py-3">
 									<h4 class="card-title text-center text-muted">
 										Spell Tracker
 									</h4>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Voluptatibus optio provident
-									obcaecati dolorum deleniti ex suscipit magnam
-									voluptate vel sequi? Accusamus molestiae minima
-									omnis doloribus quisquam officiis optio, rerum
-									dolore?
-									<br>
+									<p class="d-none d-lg-block">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Voluptatibus optio provident
+										obcaecati dolorum deleniti ex suscipit magnam
+										voluptate vel sequi? Accusamus molestiae minima
+										omnis doloribus quisquam officiis optio, rerum
+										dolore?
+									</p>
+									<p class="d-none d-sm-block d-lg-none">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									</p>
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
-									</a>
-									<br>								
+									</a>								
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
 									</a>
 								</div>	
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-md-3">
 							<div class="card">
 								<div class="card-body text-center py-3">
 									<h4 class="card-title text-center text-muted">
 										Sticky Notes
 									</h4>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Voluptatibus optio provident
-									obcaecati dolorum deleniti ex suscipit magnam
-									voluptate vel sequi? Accusamus molestiae minima
-									omnis doloribus quisquam officiis optio, rerum
-									dolore?
-									<br>
+									<p class="d-none d-lg-block">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Voluptatibus optio provident
+										obcaecati dolorum deleniti ex suscipit magnam
+										voluptate vel sequi? Accusamus molestiae minima
+										omnis doloribus quisquam officiis optio, rerum
+										dolore?
+									</p>
+									<p class="d-none d-sm-block d-lg-none">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									</p>
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
-									</a>
-									<br>								
+									</a>								
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
 									</a>
 								</div>	
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-md-3">
 							<div class="card">
 								<div class="card-body text-center py-3">
 									<h4 class="card-title text-center text-muted">
 										Etch-A-Sketch
 									</h4>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Voluptatibus optio provident
-									obcaecati dolorum deleniti ex suscipit magnam
-									voluptate vel sequi? Accusamus molestiae minima
-									omnis doloribus quisquam officiis optio, rerum
-									dolore?
-								<br>
+									<p class="d-none d-lg-block">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Voluptatibus optio provident
+										obcaecati dolorum deleniti ex suscipit magnam
+										voluptate vel sequi? Accusamus molestiae minima
+										omnis doloribus quisquam officiis optio, rerum
+										dolore?
+									</p>
+									<p class="d-none d-sm-block d-lg-none">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									</p>
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
-									</a>
-									<br>								
+									</a>								
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
 									</a>
 								</div>	
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-md-3">
 							<div class="card">
 								<div class="card-body text-center py-3">
 									<h4 class="card-title text-center text-muted">
 										Calculator
 									</h4>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Voluptatibus optio provident
-									obcaecati dolorum deleniti ex suscipit magnam
-									voluptate vel sequi? Accusamus molestiae minima
-									omnis doloribus quisquam officiis optio, rerum
-									dolore?
-									<br>
+									<p class="d-none d-lg-block">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Voluptatibus optio provident
+										obcaecati dolorum deleniti ex suscipit magnam
+										voluptate vel sequi? Accusamus molestiae minima
+										omnis doloribus quisquam officiis optio, rerum
+										dolore?
+									</p>
+									<p class="d-none d-sm-block d-lg-none">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									</p>
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
-									</a>
-									<br>								
+									</a>								
 									<a href="">
 										<i class="demo-code-icon bi bi-github"></i>
 									</a>
@@ -187,7 +198,7 @@
 
 			</section>
 			<section id="contact-section" class="container p-5">
-						<div class="container-xxl">
+						<div class="container">
 							<div class="text-center">
 								<h2>Get in Touch Maybe this Links to another page? </h2>
 								<p class="lead">Questions? Fill out the form to contact me.</p>

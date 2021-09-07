@@ -1,0 +1,29 @@
+
+Organize and comment HTML
+
+Page design
+    Apply color scheme on a basic level
+
+Primary Section
+    Add contact information
+    Add about self
+    Add correct images
+    Link socials
+
+Projects
+    Add correct images
+    Link codes and pages to projects
+    Add in descriptive text to each project
+    Calculator
+        Text wrap on Calculator is breaking word
+        Adjust height of Calculator when dynamically sizing
+    Increase width of items when in mobile format
+        Increase font size? 
+
+Skills
+    Put skills in grid
+    Write a blurb about what I've learned? 
+    
+Contact form
+    Figure out how to make contact form work
+    Check form on mobile and adjustment overall
