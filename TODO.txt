@@ -19,7 +19,7 @@ Projects
         Increase font size? 
 
 Skills
-    Put skills in grid
+    Fix grid on small size    
     Write a blurb about what I've learned? 
     
 Contact form
