@@ -7,11 +7,9 @@ Page design
 Primary Section
     Add contact information
     Add about self
-    Add correct images
     Link socials
 
 Projects
-    Add correct images
     Link codes and pages to projects
     Add in descriptive text to each project
     Calculator
