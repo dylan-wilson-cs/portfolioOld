@@ -13,7 +13,7 @@
     --whiskey: #CFA174;
     --light-navy: #608797;
     --smoke: #B3ABAA;
-    
+    scroll-behavior: smooth;
 }
 /* Universal */
 body{
@@ -74,7 +74,8 @@ body{
 }
 #primary-section #name-container{
     display: flex;
-    flex-direction: row;   
+    flex-direction: row; 
+    justify-content: center;  
 }
 #primary-section #name-container #first-name-text{
     margin-right: 10px;
@@ -103,37 +104,29 @@ font-size: 4em;
 #primary-section #social-media-container a:hover{
     text-decoration: none;
 }
-.social-icon{
-    font-size: 6em;
-    text-decoration: none;
-    margin: 20px;
-    outline : none;
-    filter: brightness(0%);
-    color: black;
-}
 .social-icon:hover{
     text-decoration: none;
     filter: none !important;
-    opacity: 80%;
+    opacity: 60%;
 }
 .social-icon-custom{
-    width: 100px;
-    height: 100px;
+    width: 5em;
+    height: 5em;
     outline : none;
     text-decoration: none;
-    filter: brightness(0%);
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .social-icon-custom:hover{
     text-decoration: none;
-    filter: none !important;
-    opacity: 80%;
+    opacity: 60%;
 }
 /* Projects section */
-#projects-container{
+#projects-section{
     display: flex;
     flex-direction: column;
 }
-#projects-container a:hover{
+#projects-section a:hover{
     text-decoration: none;
 }
 .demo-code-icon{
@@ -146,9 +139,14 @@ font-size: 4em;
 }
 .skills-icons{
     font-size: 100px;
+    align-content: center;
+    text-align: center;
 }
 .skills-icons-text{
     align-self: center;
+}
+.card-custom-background{
+    background-color: var(--light-peach);
 }
 
 /* Skills Section */
@@ -156,6 +154,22 @@ font-size: 4em;
 /* Contact Section */
 #contact-section{
     width: 100vw;
+}
+#contact-section input{
+    height: 6vh;
+}
+#contact-section span{
+    height: 6vh;
+    width: auto;
+}
+#email-submit-button{
+    width: 10vw;
+    height: 5vh;
+    background-color: var(--flat-teal);
+    color: var(--dark-peach);
+    font-weight: bold;
+    border: var(--light-navy) solid;
+    border-radius: 10px;
 }
 
 /* Media Queries */
@@ -208,18 +222,21 @@ font-size: 4em;
         font-size: 2em;
         margin-top: 23px;
     }
-    /* Social Media Icons */
-    .social-icon{
-        font-size: 3em;
-        text-decoration: none;
-        color: black;
-        outline : none;
+    #primary-section #contact-info{
+        font-size: 1.25em;
     }
+    /* Social Media Icons */
     .social-icon-custom{
         width: 50px;
         height: 50px;
+        margin-left: .25em;
+        margin-right: .25em;
     }
     #social-media-container{
         margin-top: -20px;
+    }
+    #email-submit-button{
+        width: 35vw;
+        height: 5vh;
     }
 }

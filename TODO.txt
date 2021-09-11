@@ -2,7 +2,7 @@
 Organize and comment HTML
 
 Page design
-    Apply color scheme on a basic level
+    Apply color scheme on a advanced level
 
 Primary Section
     Add contact information
