@@ -21,6 +21,18 @@ body{
 .offwhite-bg{
     background-color: var(--offwhite);
 }
+.greyish-text{
+    color: var(--greyish);
+}
+.greyish-bg{
+    color: var(--greyish);
+}
+
+
+/* Navbar */
+#navbar{
+    background-color: var(--greyish);
+}
 
 /* Landing Page */
 .header{
@@ -31,7 +43,7 @@ body{
     color: var(--neonblue);
 }
 #email-address:hover{
-    text-decoration: underline var(--neonblue);
+    text-decoration: none;
     color: var(--offwhite);
 }
 
@@ -39,11 +51,10 @@ body{
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body { background:rgb(30,30,40); }
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
-    color:white;
+    color:var(--offwhite);
     font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
     font-size: 18px;
@@ -59,15 +70,16 @@ form { max-width:420px; margin:50px auto; }
     outline:0;
 }
 
-.feedback-input:focus { border:2px solid var(--offwhite); }
+.feedback-input:focus {
+    border:2px solid var(--greyish); }
 
-textarea {
+#comment-text-area {
     height: 150px;
     line-height: 150%;
     resize:vertical;
 }
 
-[type="submit"] {
+#submit-button {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 100%;
     background:var(--neonblue);
@@ -82,7 +94,9 @@ textarea {
     margin-top:-4px;
     font-weight:700;
 }
-[type="submit"]:hover { background: var(--greyish); }
+#submit-button:hover{ 
+    background: var(--greyish); 
+}
 
 /* Projects */
 
@@ -91,15 +105,18 @@ textarea {
     color: var(--neonblue);
     background-color: none;
 }
-.code-demo-button{
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-}
 .code-demo:hover{
     color: var(--offwhite);
+}
+.project-border{
+    border-radius: 5px;
+    border: solid var(--neonblue);
+}
+.project-border-right{
+    border-right: solid var(--neonblue);
+}
+.project-border-left{
+    border-left: solid var(--neonblue);
 }
 
 /* Skills */
