@@ -32,9 +32,9 @@
 
 		<title>Dylan Wilson's Portfolio</title>
 	</head>
-	<body class="bg-dark" onload="typeWriter()">
+	<body class="bg-dark" onload="typeWriter()" id="body">
         <!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-gradient fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">DW</a>
 				<button
@@ -56,18 +56,21 @@
 						<li class="nav-item">
 							<a
 								class="nav-link"
-								href="#"
+								href="#body"
 								>Home</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Projects</a>
+							<a class="nav-link" href="#projects-section">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Skills</a>
+							<a class="nav-link" href="#skills-section">Skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#bio-section">Bio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#resume-section">Resume</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -119,7 +122,7 @@
 		</nav>
 
         <!-- Landing Page -->
-        <section>
+        <section class="py-md-5">
             <div class="container py-md-5">
                 <div class="row">
                     <div class="col-md-6 pt-md-5">
@@ -144,27 +147,27 @@
             </div>
         </section>
 
-        <hr class="neonblue-bg">
+        <hr class="neonblue-bg d-none d-lg-block" id="projects-section">
 
-        <section>
+        <section class="py-md-5">
             <h1 class="neonblue-text text-center header">
                 Projects
             </h1>
             <div class="container p-5">
                 <div class="row mb-3">
-                    <div class="col-md-3 offwhite-text border text-center my-auto">
+                    <div class="col-md-3 offwhite-text border border-secondary text-center my-auto">
                         <h3 class="py-2 neonblue-text">PerfumeBot (Reddit Bot)</h3>
                         <a href="https://www.google.com/" target="_blank"><button class="code-demo-button"><i class="bi bi-code-slash px-2 code-demo"></i></button></a>
                     </div>
-                    <div class="col-md-9 offwhite-text border text-center">
+                    <div class="col-md-9 offwhite-text border border-secondary text-center">
                         <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti possimus expedita voluptates, sed nesciunt quos aut cumque, sunt quas similique tempore exercitationem illum fuga repudiandae optio harum. Illum, architecto!</p>
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-md-9 offwhite-text border text-center d-none d-md-block">
+                    <div class="col-md-9 offwhite-text border border-secondary text-center d-none d-md-block">
                         <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque, asperiores rerum ratione debitis enim perferendis, cumque illum omnis soluta unde! Quae sint dolore, labore asperiores ipsam id tempora esse?</p>
                     </div>
-                    <div class="col-md-3 offwhite-text border text-center my-auto">
+                    <div class="col-md-3 offwhite-text border border-secondary text-center my-auto">
                         <h3 class="py-2 neonblue-text">Community Connection</h3>
                         <a  href="https://www.google.com/" target="_blank"><button class="code-demo-button"><i class="bi bi-code-slash px-2 code-demo"></i></button></a>
                         <a  href="https://www.google.com/" target="_blank"><button class="code-demo-button"><i class="bi bi-laptop px-2 code-demo"></i></button>                 </a>
@@ -174,21 +177,21 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-3 offwhite-text border text-center my-auto">
+                    <div class="col-md-3 offwhite-text border border-secondary text-center my-auto">
                         <h3 class="py-2 neonblue-text">Stickee Notes</h3>
                         <a  href="https://www.google.com/" target="_blank"><button class="code-demo-button"><i class="bi bi-code-slash px-2 code-demo"></i></button></a>
                         <a  href="https://www.googles.com/" target="_blank"><button class="code-demo-button"><i class="bi bi-laptop px-2 code-demo"></i></button>                 </a>
                     </div>
-                    <div class="col-md-9 offwhite-text border text-center">
+                    <div class="col-md-9 offwhite-text border border-secondary text-center">
                         <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti possimus expedita voluptates, sed nesciunt quos aut cumque, sunt quas similique tempore exercitationem illum fuga repudiandae optio harum. Illum, architecto!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="neonblue-bg">
+        <hr class="neonblue-bg d-none d-lg-block" id="skills-section">
 
-        <section>
+        <section class="py-md-5">
             <h1 class="neonblue-text text-center header">
                 Skills
             </h1>
@@ -229,12 +232,12 @@
             </div>
         </section>
 
-        <hr class="neonblue-bg">
+        <hr class="neonblue-bg d-none d-lg-block">
 
-        <section>
+        <section class="py-md-5">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="bio-section">
                         <h1 class="neonblue-text text-center header">
                             Bio
                         </h1>
@@ -244,7 +247,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique error numquam vero recusandae minus delectus voluptates cumque magni. Quidem ullam quaerat quibusdam ipsa dolorum expedita ea nemo, similique voluptate.
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="resume-section">
                         <h1 class="neonblue-text text-center header">
                             Resume
                         </h1>
