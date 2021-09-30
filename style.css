@@ -103,7 +103,10 @@ form {
 	background: var(--greyish);
 }
 
-.grecaptcha-badge { visibility: hidden; }
+.grecaptcha-badge { 
+	visibility: hidden;
+	opacity:0;
+}
 
 
 /* Projects */
