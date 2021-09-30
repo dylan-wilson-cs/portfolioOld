@@ -86,7 +86,6 @@ form {
 }
 
 #submit-button {
-	font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	width: 100%;
 	background: var(--neonblue);
 	border-radius: 5px;
@@ -103,6 +102,9 @@ form {
 #submit-button:hover {
 	background: var(--greyish);
 }
+
+.grecaptcha-badge { visibility: hidden; }
+
 
 /* Projects */
 
