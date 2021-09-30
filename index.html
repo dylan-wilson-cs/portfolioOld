@@ -35,7 +35,7 @@
 
 	<body class="bg-dark" onload="typeWriter()" id="body">
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">DW</a>
 				<button
@@ -91,7 +91,10 @@
 								aria-labelledby="navbarDropdown"
 							>
 								<li>
-									<a class="dropdown-item" href="https://www.linkedin.com/feed/"
+									<a
+										class="dropdown-item"
+										href="https://www.linkedin.com/feed/"
+										target="_blank"
 										>LinkedIn</a
 									>
 								</li>
@@ -99,28 +102,33 @@
 									<hr class="dropdown-divider" />
 								</li>
 								<li>
-									<a class="dropdown-item" href="https://github.com/dylan-wilson-cs">Github</a>
-								</li>
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Indeed</a>
-								</li>
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-								<li>
-									<a class="dropdown-item" href="#"
-										>Angel.co</a
+									<a
+										class="dropdown-item"
+										href="https://github.com/dylan-wilson-cs"
+										target="_blank"
+										>Github</a
 									>
 								</li>
 								<li>
 									<hr class="dropdown-divider" />
 								</li>
 								<li>
-									<a class="dropdown-item" href="#"
-										>Dice.com</a
+									<a
+										class="dropdown-item"
+										href="https://my.indeed.com/p/dylanw-ulg4h3f"
+										target="_blank"
+										>Indeed</a
+									>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="https://angel.co/u/dylan-wilson-11"
+										target="_blank"
+										>Angel.co</a
 									>
 								</li>
 							</ul>
@@ -132,25 +140,41 @@
 
 		<!-- Landing Page -->
 		<section class="py-md-5">
-			<div class="container py-md-5">
+			<div class="container py-lg-5">
 				<div class="row">
-					<div class="col-md-6 pt-md-5">
+					<div class="col-md-6 pt-5" id="name-contact">
 						<h1 class="neonblue-text text-center header pt-5">
 							Dylan Wilson
 						</h1>
-						<h2 class="pb-md-3 neonblue-text">
+						<h2 class="pb-md-3 neonblue-text text-center">
 							<a
 								href="mailto:dylan.wilson.cs@gmail.com"
-								id="email-address"
-								>dylan.wilson.cs@gmail.com </a
-							>| 734-897-8173
+								class="text-link"
+								>dylan.wilson.cs@gmail.com
+							</a>
+							<br />
+							734-897-8173
 						</h2>
-						<h4 class="offwhite-text text-center" id="type-writer"></h4>
+						<h3
+							class="offwhite-text text-center"
+							id="type-writer"
+						></h3>
 					</div>
-					<div class="col-md-6">
-						<h1 class="neonblue-text text-center">Let's Chat!</h1>
+
+					<div class="col-md-6" id="chat-container">
+						<svg class="arrows d-sm-none">
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+							<path class="a2" d="M0 20 L30 52 L60 20"></path>
+							<path class="a3" d="M0 40 L30 72 L60 40"></path>
+						</svg>
+						<h1 class="neonblue-text text-center header pt-5">
+							Let's Chat!
+						</h1>
 						<div class="container">
-							<form>
+							<form
+								action="https://formspree.io/f/mqkwjepk"
+								method="POST"
+							>
 								<input
 									name="name"
 									type="text"
@@ -167,9 +191,17 @@
 									name="text"
 									class="feedback-input"
 									placeholder="Comment"
-                                    id="comment-text-area"
+									id="comment-text-area"
 								></textarea>
-								<input type="submit" value="SUBMIT" id="submit-button" />
+								<input
+									type="submit"
+									value="SUBMIT"
+									id="submit-button"
+									class="g-recaptcha" 
+									data-sitekey="6LcXfpwcAAAAAGtrZGOazYOnCw0ya3TBeP5BheWM" 
+									data-callback='onSubmit' 
+									data-action='submit'
+								/>
 							</form>
 						</div>
 					</div>
@@ -189,13 +221,15 @@
 							offwhite-text
 							text-center
 							my-auto
-                            project-border-right
+							project-border-right
 						"
 					>
 						<h3 class="py-2 neonblue-text">
-							PerfumeBot <br>(Reddit Bot)
+							PerfumeBot <br />(Reddit Bot)
 						</h3>
-						<a href="https://www.google.com/" target="_blank"
+						<a
+							href="https://github.com/dylan-wilson-cs/Perfume-Bot"
+							target="_blank"
 							><i class="bi bi-code-slash px-2 code-demo"></i
 						></a>
 						<p class="neonblue-text">VIEW CODE</p>
@@ -205,14 +239,17 @@
 							col-md-9
 							offwhite-text
 							text-center
+							align-self-center
 						"
 					>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Aspernatur deleniti possimus expedita
-							voluptates, sed nesciunt quos aut cumque, sunt quas
-							similique tempore exercitationem illum fuga
-							repudiandae optio harum. Illum, architecto!
+						<p class="descriptive-text">
+							A Python bot made using the Reddit PRAW API. This
+							bot was designed to make moderating of transaction
+							based communities more streamlined. The primary
+							feature of PerfumeBot is an automated flairing
+							system. The bot also supports handling the report
+							system, new user interactions, and duplicate post
+							detection.
 						</p>
 					</div>
 				</div>
@@ -221,32 +258,27 @@
 						class="
 							col-md-9
 							offwhite-text
-							
 							text-center
 							d-none d-md-block
+							align-self-center
 						"
 					>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ducimus doloremque, asperiores rerum ratione
-							debitis enim perferendis, cumque illum omnis soluta
-							unde! Quae sint dolore, labore asperiores ipsam id
-							tempora esse?
+						<p class="descriptive-text">
+							A freelance website project that uses HTML, CSS,
+							Bootstrap 5, JS, and PHP. Provides a contact form to
+							receive emails via PHP, and a template for Community
+							Connection to fill with their own information and
+							images. Will be hosted via a LAMP droplet.
 						</p>
 					</div>
 					<div
-						class="
-							col-md-3
-							project-border-left
-							text-center
-							my-auto
-						"
+						class="col-md-3 project-border-left text-center my-auto"
 					>
 						<h3 class="py-2 neonblue-text">Community Connection</h3>
 						<div class="row">
 							<div class="col-6">
 								<a
-									href="https://www.google.com/"
+									href="https://github.com/dylan-wilson-cs/Community-Connection"
 									target="_blank"
 									><i
 										class="bi bi-code-slash px-2 code-demo"
@@ -256,7 +288,7 @@
 							</div>
 							<div class="col-6">
 								<a
-									href="https://www.google.com/"
+									href="https://dylan-wilson-cs.github.io/Community-Connection/"
 									target="_blank"
 									><i class="bi bi-laptop px-2 code-demo"></i>
 								</a>
@@ -268,17 +300,17 @@
 						class="
 							col-md-9
 							offwhite-text
-							
 							text-center
 							d-md-none
+							align-self-center
 						"
 					>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ducimus doloremque, asperiores rerum ratione
-							debitis enim perferendis, cumque illum omnis soluta
-							unde! Quae sint dolore, labore asperiores ipsam id
-							tempora esse?
+						<p class="descriptive-text">
+							A freelance website project that uses HTML, CSS,
+							Bootstrap 5, JS, and PHP. Provides a contact form to
+							receive emails via PHP, and a template for Community
+							Connection to fill with their own information and
+							images. Will be hosted via a LAMP droplet.
 						</p>
 					</div>
 				</div>
@@ -292,11 +324,14 @@
 							my-auto
 						"
 					>
-						<h3 class="py-2 neonblue-text">Stickee <br> Notes</h3>
+						<h3 class="py-2 neonblue-text">
+							Stickee <br />
+							Notes
+						</h3>
 						<div class="row">
 							<div class="col-6">
 								<a
-									href="https://www.google.com/"
+									href="https://github.com/dylan-wilson-cs/Stickee-Notes"
 									target="_blank"
 									><i
 										class="bi bi-code-slash px-2 code-demo"
@@ -306,7 +341,7 @@
 							</div>
 							<div class="col-6">
 								<a
-									href="https://www.google.com/"
+									href="https://dylan-wilson-cs.github.io/Stickee-Notes/"
 									target="_blank"
 									><i class="bi bi-laptop px-2 code-demo"></i>
 								</a>
@@ -318,16 +353,24 @@
 						class="
 							col-md-9
 							offwhite-text
-							
 							text-center
+							align-self-center
 						"
 					>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Aspernatur deleniti possimus expedita
-							voluptates, sed nesciunt quos aut cumque, sunt quas
-							similique tempore exercitationem illum fuga
-							repudiandae optio harum. Illum, architecto!
+						<p class="descriptive-text">
+							Stickee Notes is a web based "sticky note" app.
+							Designed to be a simple and effective way to create
+							small reminders Stickee Notes allows the users to
+							input and search any of their notes with ease.
+							Stickee Notes uses HTML, CSS, JS, and JSON to
+							provide access to notes via the browser's cache.
+							This project was done in collaboration with
+							<a
+								href="https://github.com/lyncasterc"
+								class="text-link"
+								target="_blank"
+								>Stiven Cabrera</a
+							>.
 						</p>
 					</div>
 				</div>
@@ -426,24 +469,32 @@
 						<h1 class="neonblue-text text-center header">Bio</h1>
 						<div class="container text-center pt-5">
 							<img src="portraitColor.jpg" id="portrait" alt="" />
-							<h5 class="offwhite-text pt-2">
-								I am a dedicated and passionate Junior Developer and Computer Science Student looking for opportunities to advance my skills. I am currently studying at Washtenaw Community College, and I will be transferring to Eastern Michigan University to finish my Bachelor's in Computer Science. Whether you're looking for a permanent role or need a freelancer, reach out to me and I'd be happy to help! 
-							</h5>
+							<p class="offwhite-text pt-2 descriptive-text">
+								I am a dedicated and passionate Junior Developer
+								and Computer Science Student looking for
+								opportunities to advance my skills. I am
+								currently studying at Washtenaw Community
+								College, and I will be transferring to Eastern
+								Michigan University to finish my Bachelor's in
+								Computer Science. Whether you're looking for a
+								permanent role or need a freelancer, reach out
+								to me and I'd be happy to help!
+							</p>
 						</div>
 					</div>
 					<div class="col-md-6" id="resume-section">
 						<h1 class="neonblue-text text-center header">Resume</h1>
 						<div class="d-flex justify-content-center pt-5">
-							<a href="Resume - Dylan Wilson.html">
-                                <img
-                                    id="resume-img"
-                                    class="img-fluid"
-                                    src="ResumeWhite.jpg"
-                                    alt=""
-                                    onmouseover="this.src='ResumeBlue.jpg'"
-                                    onmouseout="this.src='ResumeWhite.jpg'"
-                                />
-                            </a>
+							<a href="Resume.pdf" target="_blank">
+								<img
+									id="resume-img"
+									class="img-fluid"
+									src="ResumeWhite.jpg"
+									alt=""
+									onmouseover="this.src='ResumeBlue.jpg'"
+									onmouseout="this.src='ResumeWhite.jpg'"
+								/>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -457,5 +508,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="script.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</body>
 </html>
