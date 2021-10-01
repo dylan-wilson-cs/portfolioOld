@@ -32,6 +32,18 @@ body {
 #navbar {
 	background-color: var(--neonblue);
 }
+.navbar-brand,
+.nav-link, 
+.dropdown{
+	color: var(--offwhite) !important;
+}
+.navbar-brand:hover,
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: var(--greyish) !important;
+}
+
+
 
 /* Landing Page */
 @media only screen and (max-width : 600px) {
@@ -207,7 +219,7 @@ form {
 	}
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow{
 	0% {
 		opacity: 0;
 	}
@@ -224,15 +236,14 @@ form {
 
 .arrows path.a1 {
 	animation-delay: -1s;
-	-webkit-animation-delay: -1s; /* Safari 和 Chrome */
+	-webkit-animation-delay: -1s; 
 }
-
 .arrows path.a2 {
 	animation-delay: -0.5s;
-	-webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+	-webkit-animation-delay: -0.5s; 
 }
 
 .arrows path.a3 {
 	animation-delay: 0s;
-	-webkit-animation-delay: 0s; /* Safari 和 Chrome */
+	-webkit-animation-delay: 0s;
 }
