@@ -178,7 +178,11 @@
 							Let's Chat!
 						</h1>
 						<div class="container">
-							<form method="POST" id="contact-form">
+							<form
+								method="POST"
+								action="form.php"
+								id="contact-form"
+							>
 								<input
 									name="name"
 									type="text"
@@ -197,9 +201,11 @@
 									placeholder="Comment"
 									id="comment-text-area"
 								></textarea>
-								<button id="submit-button" data-action="submit">
-									Submit
-								</button>
+								<input
+									type="submit"
+									id="submit-button"
+									value="Submit"
+								/>
 							</form>
 						</div>
 					</div>
@@ -506,7 +512,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="script.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="contact-jq.js"></script>
+		<!-- Validation Script -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 	</body>
 </html>
