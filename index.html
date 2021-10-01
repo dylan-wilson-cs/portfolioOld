@@ -182,7 +182,7 @@
 								action="https://app.99inbound.com/api/e/NlfXlEhH"
 								method="POST"
 								id="contact-form"
-								target="#"
+								target="/#"
 							>
 								<input
 									name="name"
@@ -211,7 +211,11 @@
 										autocomplete="no"
 									/>
 								</div>
-								<button id="submit-button" data-action="submit">
+								<button
+									id="submit-button"
+									data-action="submit"
+									onClick="javascript:window.close('','_parent','');"
+								>
 									Submit
 								</button>
 							</form>
