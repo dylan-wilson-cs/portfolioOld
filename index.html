@@ -34,7 +34,6 @@
 	</head>
 
 	<body class="bg-dark" onload="typeWriter()" id="body">
-		<?php include 'form.php';?>
 		<!-- Navbar -->
 		<nav
 			class="
@@ -180,9 +179,10 @@
 						</h1>
 						<div class="container">
 							<form
-							form name="frmContact" id="" frmContact"" method="post"
-							action="" enctype="multipart/form-data"
-							onsubmit="return validateContactForm()"
+								action="https://app.99inbound.com/api/e/NlfXlEhH"
+								method="POST"
+								id="contact-form"
+								target="_blank"
 							>
 								<input
 									name="name"
@@ -202,11 +202,18 @@
 									placeholder="Comment"
 									id="comment-text-area"
 								></textarea>
-								<input
-									type="submit"
-									id="submit-button"
-									value="Submit"
-								/>
+								<div style="position: absolute; left: -5000px">
+									<input
+										type="checkbox"
+										name="bluetooth_blue_waved_dolphin"
+										value="1"
+										tabindex="-1"
+										autocomplete="no"
+									/>
+								</div>
+								<button id="submit-button" data-action="submit">
+									Submit
+								</button>
 							</form>
 						</div>
 					</div>
@@ -513,7 +520,5 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="script.js"></script>
-		<!-- Validation Script -->
-		
 	</body>
 </html>
