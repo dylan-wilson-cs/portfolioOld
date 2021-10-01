@@ -1,0 +1,51 @@
+:root {
+	--neonblue: #00adb5;
+	--offwhite: #eeeeee;
+	--greyish: #393e46;
+}
+body {
+	background-color: var(--greyish);
+}
+.neonblue-text {
+	color: var(--neonblue);
+}
+.neonblue-bg {
+	background-color: var(--neonblue);
+}
+.offwhite-text {
+	color: var(--offwhite);
+}
+.offwhite-bg {
+	background-color: var(--offwhite);
+}
+.greyish-text {
+	color: var(--greyish);
+}
+.greyish-bg {
+	color: var(--greyish);
+}
+#main-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#go-back {
+	width: 20vw;
+	background: var(--neonblue);
+	border-radius: 5px;
+	border: solid thin var(--greyish);
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+#go-back:hover {
+	background: var(--greyish);
+}
