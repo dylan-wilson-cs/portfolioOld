@@ -1,6 +1,6 @@
 var i = 0;
 var landingPageText =
-	"Web developer, computer science student, freelancer. "; /* The text */
+	"Developer, computer science student, freelancer. "; /* The text */
 var typeWritingSpeed = 75; /* The typeWritingSpeed/duration of the effect in milliseconds */
 
 function typeWriter() {
