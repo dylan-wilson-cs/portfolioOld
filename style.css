@@ -175,12 +175,12 @@ form {
 }
 
 #resume-img {
-	max-width: 250px;
+	max-width: 300px;
 	border: var(--offwhite) solid;
 }
 
 #resume-img:hover {
-	max-width: 250px;
+	max-width: 300px;
 	border: var(--neonblue) solid;
 }
 
