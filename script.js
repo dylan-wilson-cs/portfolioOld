@@ -11,3 +11,12 @@ function typeWriter() {
 		setTimeout(typeWriter, typeWritingSpeed);
 	}
 }
+
+function empty() {
+	let x = document.getElementById("comment-text-area").value;
+	let y = document.getElementById("email-input").value;
+	let z = document.getElementById("name-input").value;
+	if (x != "" && y != "" && z != "") {
+		window.close("", "_parent", "");
+	}
+}
